@@ -1,0 +1,140 @@
+body
+{
+	font-family: Arial;
+}
+
+#Logo
+{
+	position: relative;
+	left: 75px;
+}
+
+#menu
+{
+	float: right;
+}
+
+#menu li
+{ 
+	display: inline;
+	margin-right: 35px;
+}
+
+#menu a
+{
+	text-decoration: none;
+	color: grey;
+}
+
+#menu li:hover 
+{
+    border-top: 4px solid #3BAED8;
+    cursor: pointer;
+}
+
+#menu a:hover 
+{
+  color: black;
+}
+
+#Présentation
+{
+	 max-width: 100%;
+	 z-index : 20;
+}
+
+.Texte_sur_image, #Infos
+{
+	position: relative;
+	z-index: 50;
+	bottom: 300px;
+	left: 50px;
+}
+
+.Gras_Bleu, .Gras_Blanc
+{
+	font-weight: bold;
+	font-size : xx-large;
+}
+
+.Gras_Bleu
+{
+	color: #3BAED8;
+}
+
+.Gras_Blanc, .Blanc, .Bouton_info
+{
+	color: white;
+}
+
+.Bouton_info
+{
+	padding: 10px 20px;
+	border-radius: 3px;
+	background-color: #3BAED8;
+	border-bottom: 4px solid #1D8DB5;
+}
+
+.Bouton_info:hover
+{
+	cursor: pointer;
+}
+
+h2
+{
+	text-align: center;
+	clear: both;
+	font-size : xx-large;
+}
+
+.Cercle
+{
+	position: relative;
+	left: 50%;
+	background: #3BAED8;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+
+.Centré
+{
+	text-align: center;
+	margin: auto;
+	max-width: 50%;
+}
+
+#Mac
+{
+	float:left;
+}
+
+aside
+{
+	line-height: 20px;
+}
+
+.Gras_noir
+{
+	font-weight: bold;
+	font-size : large;
+}
+
+#menu2
+{
+	text-align: center;
+}
+
+#menu2 li
+{ 
+	display: inline;
+	background: grey;
+	padding: 15px;
+}
+
+#menu2 li:hover
+{ 
+	background: #3BAED8;
+	cursor: pointer;
+	border-bottom: 4px solid #1D8DB5;
+}
