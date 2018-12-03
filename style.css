@@ -6,8 +6,13 @@ body
 
 nav
 {
+	/*position: fixed;*/
 	display: flex;
 	justify-content: space-around;
+	z-index: 4000;
+	background-color: white;
+	height : 57px;
+	margin-bottom: 10px;
 }
 
 #menu
@@ -111,14 +116,55 @@ h2
 	max-width: 50%;
 }
 
-#macDesign
+#macDesignIcones
 {
 	display: flex;
 }
 
 #mac
 {
-	float:left;
+	float: left;
+}
+
+#designIcones
+{
+	display: flex;
+}
+
+#icones
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.fa-chart-line, .fa-cubes, .fa-chart-pie
+{
+	font-size: 40px;
+	color: #3BAED8;
+}
+
+.fa-chart-line
+{
+	position: absolute;
+	top: 40px;
+}
+
+.fa-cubes
+{
+	position: absolute;
+	top: 140px;
+}
+
+.fa-chart-pie
+{
+	position: absolute;
+	top: 240px;
+}
+
+#design
+{
+	margin-left: 70px;
 }
 
 #menu2
