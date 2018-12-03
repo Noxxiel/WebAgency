@@ -1,22 +1,23 @@
 body
 {
 	font-family: Arial;
+	margin: 0;
 }
 
-#Logo
+nav
 {
-	position: relative;
-	left: 75px;
+	display: flex;
+	justify-content: space-around;
 }
 
 #menu
 {
-	float: right;
+	display: flex;
+	list-style-type: none;
 }
 
 #menu li
 { 
-	display: inline;
 	margin-right: 35px;
 }
 
@@ -28,7 +29,8 @@ body
 
 #menu li:hover 
 {
-    border-top: 4px solid #3BAED8;
+    border-top: 5px solid #3BAED8;
+    padding-top: 10px;
     cursor: pointer;
 }
 
@@ -37,45 +39,50 @@ body
   color: black;
 }
 
-#Présentation
+#accueil
+{
+	position: relative;
+}
+
+#presentation
 {
 	 max-width: 100%;
 	 z-index : 20;
 }
 
-.Texte_sur_image, #Infos
+#texteSurImage, #Infos
 {
-	position: relative;
+	position: absolute;
 	z-index: 50;
-	bottom: 300px;
-	left: 50px;
+	bottom: 27%;
+	left: 10%;
 }
 
-.Gras_Bleu, .Gras_Blanc
+.grasBleu, .grasBlanc
 {
 	font-weight: bold;
 	font-size : xx-large;
 }
 
-.Gras_Bleu
+.grasBleu
 {
 	color: #3BAED8;
 }
 
-.Gras_Blanc, .Blanc, .Bouton_info
+.grasBlanc, .blanc, .boutonInfo
 {
 	color: white;
 }
 
-.Bouton_info
+.boutonInfo
 {
 	padding: 10px 20px;
 	border-radius: 3px;
 	background-color: #3BAED8;
-	border-bottom: 4px solid #1D8DB5;
+	border-bottom: 5px solid #1D8DB5;
 }
 
-.Bouton_info:hover
+.boutonInfo:hover
 {
 	cursor: pointer;
 }
@@ -87,7 +94,7 @@ h2
 	font-size : xx-large;
 }
 
-.Cercle
+.cercle
 {
 	position: relative;
 	left: 50%;
@@ -97,37 +104,34 @@ h2
 	height: 10px;
 }
 
-.Centré
+.centre
 {
 	text-align: center;
 	margin: auto;
 	max-width: 50%;
 }
 
-#Mac
+#macDesign
+{
+	display: flex;
+}
+
+#mac
 {
 	float:left;
-}
-
-aside
-{
-	line-height: 20px;
-}
-
-.Gras_noir
-{
-	font-weight: bold;
-	font-size : large;
 }
 
 #menu2
 {
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding-left: 0;
+	list-style-type: none;
 }
 
 #menu2 li
-{ 
-	display: inline;
+{
 	background: grey;
 	padding: 15px;
 }
@@ -138,3 +142,17 @@ aside
 	cursor: pointer;
 	border-bottom: 4px solid #1D8DB5;
 }
+
+#lesNeufProjets
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#projet1, #projet2, #projet3, #projet4, #projet5, #projet6, #projet7, #projet8, #projet9
+{
+	width: 250px;
+	height: 167px;
+	padding-bottom: 10px;
+} 
