@@ -6,13 +6,15 @@ body
 
 nav
 {
-	/*position: fixed;*/
+	position: fixed;
 	display: flex;
 	justify-content: space-around;
 	z-index: 4000;
 	background-color: white;
-	height : 57px;
+	width: 100%;
+	height : 100px;
 	margin-bottom: 10px;
+	align-items: center;
 }
 
 #menu
@@ -23,35 +25,38 @@ nav
 
 #menu li
 { 
-	margin-right: 35px;
+	margin-right: 7px;
 }
 
 #menu a
 {
 	text-decoration: none;
 	color: grey;
+	padding-top: 38px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 #menu li:hover 
 {
-    border-top: 5px solid #3BAED8;
-    padding-top: 10px;
     cursor: pointer;
 }
 
 #menu a:hover 
 {
   color: black;
+  border-top: 3px solid #3BAED8;
 }
 
 #accueil
 {
 	position: relative;
+	padding-top: 100px;
 }
 
 #presentation
 {
-	 max-width: 100%;
+	 width: 100%;
 	 z-index : 20;
 }
 
@@ -92,11 +97,21 @@ nav
 	cursor: pointer;
 }
 
+#services
+{
+	padding-top: 100px;
+}
+
 h2
 {
 	text-align: center;
 	clear: both;
 	font-size : xx-large;
+}
+
+#projets
+{
+	background-color: #F5F5F5;
 }
 
 .cercle
@@ -129,6 +144,7 @@ h2
 #designIcones
 {
 	display: flex;
+	width: 50%;
 }
 
 #icones
@@ -182,11 +198,22 @@ h2
 	padding: 15px;
 }
 
+#works
+{
+	border-radius: 3px 0 0 3px;
+}
+
+#portfolio
+{
+	border-radius: 0 3px 3px 0;
+}
+
 #menu2 li:hover
 { 
 	background: #3BAED8;
 	cursor: pointer;
 	border-bottom: 4px solid #1D8DB5;
+	padding-bottom: 11px;
 }
 
 #lesNeufProjets
@@ -194,6 +221,7 @@ h2
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	max-width: 97%;
 }
 
 #projet1, #projet2, #projet3, #projet4, #projet5, #projet6, #projet7, #projet8, #projet9
