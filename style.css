@@ -156,7 +156,7 @@ hr
 .cercleBleu
 {
 	position: relative;
-	left: 635px;
+	left: 635px; /* a changer */
 	bottom: 29px;
 	background: #3BAED8;
 	border-radius: 50%;
@@ -292,6 +292,14 @@ hr
 figure
 {
 	position: relative;
+	margin: 10px;
+	overflow: hidden;
+}
+
+figure img
+{
+	width: 300px;
+	height: 100%;
 }
 
 figcaption
@@ -299,22 +307,18 @@ figcaption
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.3);
 	color: white;
-	width: 231px;
-	top: 109px;
-	height: 48px;
-	padding-top: 10px;
-	padding-left: 10px;
+	width: 100%;
+	bottom: 0;
+	height: 50px;
 	display: none;
+	cursor: pointer;
+	padding-top: 12px;
+	padding-left: 10px;
 }
 
 figure:hover figcaption
 {
-	display: initial;
-}
-
-figcaption:hover
-{
-	cursor: pointer;
+	display: block;
 }
 
 .fa-eye
@@ -325,14 +329,8 @@ figcaption:hover
 	background-color: #3BAED7;
 	border: 2px solid white;
 	border-radius: 50%;
-	left: 185px;
-	bottom: 36px;
-}
-
-#projet1, #projet2, #projet3, #projet4, #projet5, #projet6, #projet7, #projet8, #projet9
-{
-	width: 241px;
-	height: 167px;
+	right: 30px;
+	bottom: 40px;
 }
 
 #googleMaps
@@ -389,10 +387,10 @@ h3
 	border: 1px solid #63686D;
 	border-radius: 3px;
 	margin-bottom: 10px;
+	width: 300px;
 }
 
 #boutonEnvoi
 {
-	position: relative;
-	top: 30px;
+	margin-top: 10px;
 }
