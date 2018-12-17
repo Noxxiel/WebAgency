@@ -20,6 +20,7 @@ body
 nav
 {
 	position: fixed;
+	-webkit-transform: translateZ(0);
 	display: flex;
 	justify-content: space-around;
 	z-index: 4000;
@@ -104,7 +105,7 @@ li img
 #chevronGauche, #chevronDroite
 {
 	position: absolute;
-	top: 40%;
+	bottom: 255px;
 	z-index: 50;
 	background-color: rgba(0,0,0,0.3);
 	border-radius: 50%;
@@ -203,7 +204,7 @@ hr
 	position: relative;
 	margin: auto;
 	bottom: 22px;
-	background: #3BAED8;
+	background-color: #3BAED8;
 	border-radius: 50%;
 	width: 15px;
 	height: 15px;
@@ -257,7 +258,7 @@ hr
 {
 	position: absolute;
 	left: 59px;
-	top: 19px;
+	top: 23px;
 }
 
 #design
@@ -277,20 +278,31 @@ hr
 #menu2 li
 {
 	position: relative;
-	background: grey;
-	padding: 15px;
+	padding: 15px 0;
 	background-color: #E5E5E5;
 	cursor: pointer;
 }
 
-#bordGauche
+/*Le bouton "All Works" est enclenché initialement*/
+
+li#bordGauche
 {
-	border-radius: 3px 0 0 3px;
+	border-radius: 5px 0 0 5px;
+	background-color: #5CADD3;
+	border-bottom: 4px solid #468CAD;
+	padding: 15px 0 11px 0;
+}
+
+a[href="#lesNeufProjets"]
+{
+	color: white;
+	text-decoration: none;
+	padding: 15px;
 }
 
 #bordDroit
 {
-	border-radius: 0 3px 3px 0;
+	border-radius: 0 5px 5px 0;
 }
 
 #menu2 i
@@ -302,10 +314,11 @@ hr
 	display: none;
 }
 
-#menu2 a
+a[href="#creative"], a[href="#corporate"], a[href="#portfolio"]
 {
 	text-decoration: none;
 	color: #64686D;
+	padding: 15px;
 }
 
 #menu2 li:hover a
@@ -315,10 +328,9 @@ hr
 
 #menu2 li:hover
 { 
-	background: #5CADD3;
+	background-color: #5CADD3;
 	border-bottom: 4px solid #468CAD;
 	padding-bottom: 11px;
-	color: white;
 }
 
 #menu2 li:hover i
@@ -327,7 +339,7 @@ hr
 	color: #468CAD;
 }
 
-#lesNeufProjets
+#flex
 {
 	display: flex;
 	flex-wrap: wrap;
@@ -377,6 +389,75 @@ figure:hover figcaption
 	border-radius: 50%;
 	right: 30px;
 	bottom: 40px;
+}
+
+/*Quand je clique sur un bouton, il est enclenché (sauf All Works)*/
+#creative:target #bouton2, #corporate:target #bouton3, 
+#portfolio:target #bordDroit
+{
+	background-color: #5CADD3;
+	border-bottom: 4px solid #468CAD;
+	padding-bottom: 11px;
+}
+
+#creative:target a[href="#creative"], 
+#corporate:target a[href="#corporate"],
+#portfolio:target a[href="#portfolio"]
+{
+	color: white;
+}
+
+/*Quand je clique sur un autre bouton que "All Works", 
+"All Works" apparaît inactif*/
+
+#creative:target #bordGauche, #corporate:target #bordGauche, 
+#portfolio:target #bordGauche
+{
+	background-color: #E5E5E5;
+	border-bottom: none;
+}
+
+#creative:target a[href="#lesNeufProjets"], 
+#corporate:target a[href="#lesNeufProjets"],
+#portfolio:target a[href="#lesNeufProjets"]
+{
+	color: #64686D;
+}
+
+#creative:target #bordGauche:hover, 
+#corporate:target #bordGauche:hover, 
+#portfolio:target #bordGauche:hover
+{
+	background-color: #5CADD3;
+	border-bottom: 4px solid #468CAD;
+	padding-bottom: 11px;
+}
+
+#creative:target #bordGauche:hover a[href="#lesNeufProjets"], 
+#corporate:target #bordGauche:hover a[href="#lesNeufProjets"], 
+#portfolio:target #bordGauche:hover a[href="#lesNeufProjets"]
+{
+	color: white;
+}
+
+/*Cliquer sur "All Works" réinitialise toutes les propriétés CSS*/
+
+/*Quand je clique sur un bouton, les projets qui ne 
+sont pas concernés sont transparents..*/
+#creative:target .corporate, #creative:target .portfolio, 
+#corporate:target .creative, #corporate:target .portfolio, 
+#portfolio:target .creative, #portfolio:target .corporate
+{
+	opacity: 0.3;
+}
+
+/*.. et ceux qui sont concernés sont bien visible.*/
+#lesNeufProjets:target figure, 
+#creative:target .creative, 
+#corporate:target .corporate, 
+#portfolio:target .portfolio
+{
+	opacity: 1;
 }
 
 #googleMaps
