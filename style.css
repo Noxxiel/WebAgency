@@ -20,7 +20,6 @@ body
 nav
 {
 	position: fixed;
-	-webkit-transform: translateZ(0);
 	display: flex;
 	justify-content: space-around;
 	z-index: 4000;
@@ -339,12 +338,13 @@ a[href="#creative"], a[href="#corporate"], a[href="#portfolio"]
 	color: #468CAD;
 }
 
-#flex
+#conteneurImagesProjets
 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	max-width: 1500px;
+	margin: auto;
 }
 
 figure
@@ -392,6 +392,7 @@ figure:hover figcaption
 }
 
 /*Quand je clique sur un bouton, il est enclenché (sauf All Works)*/
+
 #creative:target #bouton2, #corporate:target #bouton3, 
 #portfolio:target #bordDroit
 {
@@ -444,6 +445,7 @@ figure:hover figcaption
 
 /*Quand je clique sur un bouton, les projets qui ne 
 sont pas concernés sont transparents..*/
+
 #creative:target .corporate, #creative:target .portfolio, 
 #corporate:target .creative, #corporate:target .portfolio, 
 #portfolio:target .creative, #portfolio:target .corporate
@@ -481,6 +483,7 @@ iframe
 {
 	width: 100%;
 	height: 535px;
+	border: 0;
 }
 
 .gras
@@ -511,7 +514,7 @@ form p
 	border-width: 1px;
 }
 
-h2
+#googleMaps h2
 {
 	font-size: x-large;
 	margin: 20px 0 15px 0;
