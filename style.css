@@ -105,7 +105,7 @@ li img
 #chevronGauche, #chevronDroite
 {
 	position: absolute;
-	bottom: 255px;
+	bottom: 42%;
 	z-index: 50;
 	background-color: rgba(0,0,0,0.3);
 	border-radius: 50%;
@@ -452,7 +452,7 @@ sont pas concernés sont transparents..*/
 }
 
 /*.. et ceux qui sont concernés sont bien visible.*/
-#lesNeufProjets:target figure, 
+ 
 #creative:target .creative, 
 #corporate:target .corporate, 
 #portfolio:target .portfolio
@@ -482,7 +482,7 @@ sont pas concernés sont transparents..*/
 	font-weight: bold;
 }
 
-#formulaire
+form
 {
 	position: absolute;
 	padding: 0 20px;
@@ -493,7 +493,7 @@ sont pas concernés sont transparents..*/
 	background-color: rgba(255,255,255,0.8);
 }
 
-#formulaire p
+form p
 {
 	color: #63686D;
 	font-size: 0.85em;
