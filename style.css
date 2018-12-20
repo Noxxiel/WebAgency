@@ -25,15 +25,17 @@ nav
 	z-index: 4000;
 	background-color: white;
 	width: 100%;
-	height : 100px;
+	min-height : 100px;
 	margin-bottom: 10px;
 	align-items: center;
 }
+
 
 #menu
 {
 	display: flex;
 	list-style-type: none;
+	padding-left: 0;
 }
 
 #menu li
@@ -55,11 +57,6 @@ nav
 {
   color: black;
   border-top: 3px solid #3BAED8;
-}
-
-#accueil
-{
-	position: relative;
 }
 
 #slideshow
@@ -139,28 +136,33 @@ li img
 	color: white;
 }
 
-#texteSurImage, #Infos
+#texteSurImage
 {
 	position: absolute;
 	z-index: 50;
-	bottom: 33%;
-	left: 10%;
+	bottom: 250px;
+	left: 130px;
 }
 
-.grasBleu, .grasBlanc
+#grasBleu, #grasBlanc
 {
 	font-weight: bold;
-	font-size : xx-large;
+	font-size: 2.5vw;
 }
 
-.grasBleu
+#grasBleu
 {
 	color: #5CADD3;
 }
 
-.grasBlanc, .blanc, .boutonBleu
+#grasBlanc, #blanc, .boutonBleu
 {
 	color: white;
+}
+
+#blanc
+{
+	font-size: 1.2vw;
 }
 
 .boutonBleu
@@ -175,7 +177,6 @@ li img
 
 #services
 {
-	height: 640px;
 	padding-top: 80px;
 }
 
@@ -183,7 +184,7 @@ h1
 {
 	text-align: center;
 	clear: both;
-	font-size : xx-large;
+	font-size : 45px;
 }
 
 #projets
@@ -225,8 +226,7 @@ hr
 
 #iconeTexte
 {
-	position: relative;
-	top: 70px;
+	margin-top: 70px;
 	list-style-type: none;
 	width: 72%;
 }
@@ -299,6 +299,11 @@ a[href="#lesNeufProjets"]
 	padding: 15px;
 }
 
+#bouton2 i, #bouton3 i, #bordDroit i
+{
+	display: none;
+}
+
 #bordDroit
 {
 	border-radius: 0 5px 5px 0;
@@ -310,7 +315,7 @@ a[href="#lesNeufProjets"]
 	top: 38px;
 	right: 42%;
 	font-size: 25px;
-	display: none;
+	color: #468CAD;
 }
 
 a[href="#creative"], a[href="#corporate"], a[href="#portfolio"]
@@ -335,7 +340,6 @@ a[href="#creative"], a[href="#corporate"], a[href="#portfolio"]
 #menu2 li:hover i
 {
 	display: initial;
-	color: #468CAD;
 }
 
 #conteneurImagesProjets
@@ -408,8 +412,22 @@ figure:hover figcaption
 	color: white;
 }
 
+#creative:target #bouton2 i, 
+#corporate:target #bouton3 i, 
+#portfolio:target #bordDroit i
+{
+	display: initial;
+}
+
 /*Quand je clique sur un autre bouton que "All Works", 
 "All Works" apparaît inactif*/
+
+#creative:target #bordGauche i, 
+#corporate:target #bordGauche i, 
+#portfolio:target #bordGauche i
+{
+	display: none;
+}
 
 #creative:target #bordGauche, #corporate:target #bordGauche, 
 #portfolio:target #bordGauche
@@ -486,7 +504,7 @@ iframe
 	border: 0;
 }
 
-.gras
+#gras
 {
 	font-weight: bold;
 }
@@ -550,4 +568,59 @@ input.champ
 textarea
 {
 	font-family: 'Roboto';
+}
+
+@media screen and (max-width: 680px)
+{
+    nav
+    {
+        flex-direction: column;
+    }
+
+    #logo
+    {
+    	padding-bottom: 32px;
+    }
+
+    #menu
+    {
+
+    }
+
+    #menu a
+    {
+    	padding-top: 20px;
+    }
+
+    #sContent
+    {
+    	padding-top: 140px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px)
+{
+	#texteSurImage
+	{
+		bottom: 325px;
+		left: 100px;
+	}
+
+	#grasBleu, #grasBlanc
+	{
+		
+	}
+
+	#blanc
+	{
+
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	#grasBleu, #grasBlanc
+	{
+		font-size: medium;
+	}
 }
