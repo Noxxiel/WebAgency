@@ -716,6 +716,30 @@ textarea
 	}
 }
 
+@media screen and (min-width: 300px) and (max-width: 511px)
+{
+	.icone
+	{
+		margin-bottom: 45px;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 639px)
+{
+	#conteneurImagesProjets
+	{
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 512px) and (max-width: 550px)
+{
+	.icone
+	{
+		margin-bottom: 35px;
+	}
+}
+
 @media screen and (min-width: 800px) and (max-width: 1100px)
 {
 	#texteSurImage
