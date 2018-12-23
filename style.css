@@ -59,6 +59,11 @@ nav
   border-top: 3px solid #3BAED8;
 }
 
+#accueil
+{
+	position: relative;
+}
+
 #slideshow
 {
 	position: relative;
@@ -222,6 +227,8 @@ hr
 {
 	display: flex;
 	justify-content: space-around;
+	max-width: 1900px;
+	margin: auto;
 }
 
 #iconeTexte
@@ -229,6 +236,7 @@ hr
 	margin-top: 70px;
 	list-style-type: none;
 	width: 72%;
+	padding-left: 0;
 }
 
 #iconeTexte li
@@ -429,6 +437,13 @@ figure:hover figcaption
 	display: none;
 }
 
+#creative:target #bordGauche:hover i, 
+#corporate:target #bordGauche:hover i, 
+#portfolio:target #bordGauche:hover i
+{
+	display: block;
+}
+
 #creative:target #bordGauche, #corporate:target #bordGauche, 
 #portfolio:target #bordGauche
 {
@@ -543,7 +558,6 @@ form p
 	padding: 10px;
 	border: 1px solid #CCCACA;
 	border-radius: 5px;
-	
 	width: 300px;
 }
 
@@ -570,7 +584,79 @@ textarea
 	font-family: 'Roboto';
 }
 
-@media screen and (max-width: 680px)
+@media screen and (min-width: 300px) and (max-width: 335px)
+{
+	#menu li
+	{ 
+		margin-right: 3px;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 360px)
+{
+	form
+	{
+		width: 260px;
+	}
+
+	.champ
+	{
+		width: 240px;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 380px)
+{
+	li#bordGauche
+	{
+		padding: 5px 0 1px 0;
+	}
+
+	#menu2 li
+	{
+	    padding: 5px 0;
+	}
+
+	a[href="#lesNeufProjets"], a[href="#creative"], 
+	a[href="#corporate"], a[href="#portfolio"]
+	{
+		padding: 5px;
+	}
+
+	#menu2 i
+	{
+		top: 22px;
+		right: 37%;
+	}
+
+	#menu2 li:hover
+	{ 
+		padding-bottom: 5px;
+	}
+
+	#creative:target #bouton2, #corporate:target #bouton3, 
+	#portfolio:target #bordDroit
+	{
+		padding-bottom: 5px;
+	}
+
+	#creative:target #bordGauche:hover, 
+	#corporate:target #bordGauche:hover, 
+	#portfolio:target #bordGauche:hover
+	{
+		padding-bottom: 5px;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 510px)
+{
+	#mac
+	{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 680px)
 {
     nav
     {
@@ -580,11 +666,6 @@ textarea
     #logo
     {
     	padding-bottom: 32px;
-    }
-
-    #menu
-    {
-
     }
 
     #menu a
@@ -598,11 +679,48 @@ textarea
     }
 }
 
+@media screen and (min-width: 300px) and (max-width: 900px)
+{
+	form
+	{
+		position: static;
+		display: block;
+		margin: auto;
+	}
+
+	form h2
+	{
+		padding-top: 20px;
+	}
+
+	#macIconeTexte
+	{
+		display: initial;
+	}
+
+	#mac
+	{
+		display: block;
+		margin: auto;
+	}
+
+	#iconeTexte
+	{
+		width: 100%;
+	}
+
+	#voileBleu
+	{
+		top: 100px;
+		height: 46.5%;
+	}
+}
+
 @media screen and (min-width: 800px) and (max-width: 1100px)
 {
 	#texteSurImage
 	{
-		bottom: 325px;
+		top: 125px;
 		left: 100px;
 	}
 
@@ -617,10 +735,18 @@ textarea
 	}
 }
 
-@media screen and (max-width: 800px)
+@media screen and (min-width: 901px) and (max-width: 974px)
 {
-	#grasBleu, #grasBlanc
+	.icone
 	{
-		font-size: medium;
+		margin-bottom: 65px;
+	}
+}
+
+@media screen and (min-width: 975px) and (max-width: 1280px)
+{
+	.icone
+	{
+		margin-bottom: 36px;
 	}
 }
