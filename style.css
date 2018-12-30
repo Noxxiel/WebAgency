@@ -707,7 +707,7 @@ textarea
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 900px)
+@media screen and (min-width: 300px) and (max-width: 1024px)
 {
 	form
 	{
@@ -800,7 +800,7 @@ textarea
 {
 	.icone
 	{
-		margin-bottom: 35px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -817,19 +817,11 @@ textarea
 	}
 }
 
-@media screen and (min-width: 901px) and (max-width: 974px)
+@media screen and (min-width: 681px) and (max-width: 1024px)
 {
-	.icone
+	#texteSurImage
 	{
-		margin-bottom: 85px;
-	}
-}
-
-@media screen and (min-width: 975px) and (max-width: 1280px)
-{
-	.icone
-	{
-		margin-bottom: 36px;
+		padding-top: 100px;
 	}
 }
 
@@ -850,5 +842,21 @@ textarea
 	{
 		font-size: 0.85em;
 		line-height: 20px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1320px)
+{
+	.icone
+	{
+		margin-bottom: 60px;
+	}
+}
+
+@media screen and (min-width: 1321px) and (max-width: 1369px)
+{
+	.icone
+	{
+		margin-bottom: 10px;
 	}
 }
