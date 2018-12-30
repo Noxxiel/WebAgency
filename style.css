@@ -128,9 +128,10 @@ li img
 .fa-chevron-left
 {
 	position: relative;
-	left: 7px;
+	left: 5px;
 	top: 25px;
 	color: white;
+	font-size: 21px;
 }
 
 .fa-chevron-right
@@ -139,6 +140,7 @@ li img
 	left: 15px;
 	top: 25px;
 	color: white;
+	font-size: 21px;
 }
 
 #texteSurImage
@@ -168,6 +170,7 @@ li img
 #blanc
 {
 	font-size: 15px;
+	margin-bottom: 30px;
 }
 
 .boutonBleu
@@ -176,13 +179,13 @@ li img
 	padding: 10px 20px;
 	border-radius: 3px;
 	background-color: #5CADD3;
-	border-bottom: 5px solid #4494BB;
+	border-bottom: 3px solid #4494BB;
 	cursor: pointer;
 }
 
 #services
 {
-	padding-top: 80px;
+	padding-top: 92px;
 }
 
 h1
@@ -201,6 +204,8 @@ h1
 
 hr
 {
+	position: relative;
+	top: 15px;
 	width: 150px;
 	opacity: 0.3;
 }
@@ -209,7 +214,7 @@ hr
 {
 	position: relative;
 	margin: auto;
-	bottom: 22px;
+	bottom: 7px;
 	background-color: #5CADD3;
 	border-radius: 50%;
 	width: 15px;
@@ -231,6 +236,11 @@ hr
 	justify-content: space-around;
 	max-width: 1900px;
 	margin: auto;
+}
+
+#mac
+{
+	margin-left: 100px; 
 }
 
 #iconeTexte
@@ -592,6 +602,7 @@ input.champ
 	height: 34px;
 	width: 113px;
 	padding: 0;
+	border-radius: 5px;
 }
 
 textarea
@@ -824,6 +835,12 @@ textarea
 
 @media screen and (min-width: 1024px) and (max-width: 1279px)
 {
+	#conteneurImagesProjets
+	{
+		justify-content: center;
+		max-width: 1274px;
+	}
+
 	figure img
 	{
 		width: 235px;
