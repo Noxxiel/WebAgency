@@ -106,7 +106,7 @@ li img
 #chevronGauche, #chevronDroite
 {
 	position: absolute;
-	top: 275px;
+	top: 50%;
 	z-index: 50;
 	background-color: rgba(0,0,0,0.3);
 	width: 35px;
@@ -147,8 +147,8 @@ li img
 {
 	position: absolute;
 	z-index: 50;
-	top: 200px;
-	left: 130px;
+	top: 35%;
+	left: 10%;
 }
 
 #grasBleu, #grasBlanc
@@ -845,11 +845,22 @@ textarea
 	}
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1320px)
+@media screen and (min-width: 1025px) and (max-width: 1320px)
 {
 	.icone
 	{
 		margin-bottom: 60px;
+	}
+
+	#mac
+	{
+		position: relative;
+		top: 135px;
+	}
+
+	#slideshow
+	{
+		height: 560px;
 	}
 }
 
@@ -858,5 +869,48 @@ textarea
 	.icone
 	{
 		margin-bottom: 10px;
+	}
+}
+
+@media screen and (min-width: 1321px) and (max-width: 1600px)
+{
+	#slideshow
+	{
+		height: 650px;
+	}
+}
+
+@media screen and (min-width: 1700px)
+{
+	#slideshow
+	{
+		height: 750px;
+	}
+}
+
+@media screen and (min-width: 1900px)
+{
+	#slideshow
+	{
+		width: 1900px;
+		margin: auto;
+	}
+
+	/*Méthode pour centrer "nav" sans margin auto, incompatible avec 
+	position: fixed*/
+
+	nav
+	{
+		right: 50%;
+    	margin-right: -950px;
+		width: 1900px;
+	}
+
+	#texteSurImage
+	{
+		position: absolute;
+		z-index: 50;
+		top: 262.5px;
+		left: 10%;
 	}
 }
