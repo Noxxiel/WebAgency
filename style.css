@@ -151,23 +151,23 @@ li img
 	left: 10%;
 }
 
-#grasBleu, #grasBlanc
+.grasBleu, .grasBlanc
 {
 	font-weight: bold;
 	font-size: xx-large;
 }
 
-#grasBleu
+.grasBleu
 {
 	color: #5CADD3;
 }
 
-#grasBlanc, #blanc, .boutonBleu
+.grasBlanc, .blanc, .boutonBleu
 {
 	color: white;
 }
 
-#blanc
+.blanc
 {
 	font-size: 15px;
 	margin-bottom: 30px;
@@ -181,6 +181,11 @@ li img
 	background-color: #5CADD3;
 	border-bottom: 3px solid #4494BB;
 	cursor: pointer;
+}
+
+#texteFondBleuPourMobile
+{
+	display: none;
 }
 
 #services
@@ -707,8 +712,52 @@ textarea
     }
 }
 
+@media screen and (min-width: 300px) and (max-width: 511px)
+{
+	.icone
+	{
+		margin-bottom: 60px;
+	}
+}
+
 @media screen and (min-width: 300px) and (max-width: 1024px)
 {
+	#slideshow
+	{
+		height: 340px;
+	}
+
+	.grasBleu, .grasBlanc
+	{
+		font-size: large;
+	}
+
+	#texteSurImage
+	{
+		display: none;
+	}
+
+	#texteFondBleuPourMobile
+	{
+		display: block;
+		background-image: radial-gradient(darkblue, #5CADD3);
+		border-radius: 15px;
+		position: static;
+		text-align: center;
+		padding-bottom: 20px;
+		padding-top: 150px;
+	}
+
+	#slideshow
+	{
+		display: none;
+	}
+
+	#chevronGauche, #chevronDroite
+	{
+		display: none;
+	}
+
 	form
 	{
 		position: static;
@@ -744,55 +793,11 @@ textarea
 	}
 }
 
-@media screen and (min-width: 300px) and (max-width: 511px)
-{
-	.icone
-	{
-		margin-bottom: 60px;
-	}
-}
-
-@media screen and (min-width: 300px) and (max-width: 1024px)
-{
-	#slideshow
-	{
-		height: 340px;
-	}
-
-	#grasBleu, #grasBlanc
-	{
-		font-size: large;
-	}
-
-	#texteSurImage
-	{
-		background-image: radial-gradient(darkblue, #5CADD3);
-		border-radius: 15px;
-		position: static;
-		text-align: center;
-		padding-bottom: 20px;
-		padding-top: 150px;
-	}
-
-	#slideshow
-	{
-		display: none;
-	}
-}
-
 @media screen and (min-width: 300px) and (max-width: 639px)
 {
 	#conteneurImagesProjets
 	{
 		justify-content: center;
-	}
-}
-
-@media screen and (min-width: 300px) and (max-width: 1024px)
-{
-	#chevronGauche, #chevronDroite
-	{
-		display: none;
 	}
 }
 
@@ -819,7 +824,7 @@ textarea
 
 @media screen and (min-width: 681px) and (max-width: 1024px)
 {
-	#texteSurImage
+	#texteFondBleuPourMobile
 	{
 		padding-top: 100px;
 	}
@@ -850,12 +855,6 @@ textarea
 	.icone
 	{
 		margin-bottom: 60px;
-	}
-
-	#mac
-	{
-		position: relative;
-		top: 135px;
 	}
 
 	#slideshow
@@ -902,15 +901,8 @@ textarea
 	nav
 	{
 		right: 50%;
-    	margin-right: -950px;
-		width: 1900px;
-	}
-
-	#texteSurImage
-	{
-		position: absolute;
-		z-index: 50;
-		top: 262.5px;
-		left: 10%;
+    	margin-right: -955px;
+		width: 1910px; /*+10 pixel pour que le nav recouvre totalement
+						le slider*/
 	}
 }
