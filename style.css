@@ -689,6 +689,22 @@ textarea
 	}
 }
 
+@media screen and (min-width: 300px) and (max-width: 511px)
+{
+	.icone
+	{
+		margin-bottom: 60px;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 639px)
+{
+	#conteneurImagesProjets
+	{
+		justify-content: center;
+	}
+}
+
 @media screen and (min-width: 300px) and (max-width: 680px)
 {
     nav
@@ -715,14 +731,6 @@ textarea
     {
     	padding-top: 135px;
     }
-}
-
-@media screen and (min-width: 300px) and (max-width: 511px)
-{
-	.icone
-	{
-		margin-bottom: 60px;
-	}
 }
 
 @media screen and (min-width: 300px) and (max-width: 1024px)
@@ -795,14 +803,6 @@ textarea
 	{
 		top: 100px;
 		height: 46.5%;
-	}
-}
-
-@media screen and (min-width: 300px) and (max-width: 639px)
-{
-	#conteneurImagesProjets
-	{
-		justify-content: center;
 	}
 }
 
