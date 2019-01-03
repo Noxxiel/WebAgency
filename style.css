@@ -894,7 +894,7 @@ textarea
 	}
 }
 
-@media screen and (min-width: 1700px)
+@media screen and (min-width: 1700px) and (max-width: 1899px)
 {
 	#slideshow
 	{
@@ -906,7 +906,15 @@ textarea
 {
 	#slideshow
 	{
-		width: 1900px;
+		height: 850px;
+	}
+}
+
+@media screen and (min-width: 2000px)
+{
+	#slideshow
+	{
+		width: 2000px;
 		margin: auto;
 	}
 
@@ -916,8 +924,8 @@ textarea
 	nav
 	{
 		right: 50%;
-    	margin-right: -955px;
-		width: 1910px; /*+10 pixel pour que le nav recouvre totalement
+    	margin-right: -1005px;
+		width: 2010px; /*+10 pixel pour que le nav recouvre totalement
 						le slider*/
 	}
 }
