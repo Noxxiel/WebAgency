@@ -538,7 +538,7 @@ sont pas concernés sont transparents..*/
 	bottom: 0;
 	background-color: rgba(120, 190, 255, 0.3);
 	width: 100%;
-	height: 84.5%;
+	height: 540px;
 	pointer-events: none;
 }
 
@@ -731,6 +731,12 @@ textarea
     {
     	padding-top: 135px;
     }
+
+    #voileBleu
+	{
+		top: 135px;
+		height: 535px;
+	}
 }
 
 @media screen and (min-width: 300px) and (max-width: 1024px)
@@ -798,12 +804,6 @@ textarea
 	{
 		width: 100%;
 	}
-
-	#voileBleu
-	{
-		top: 100px;
-		height: 46.5%;
-	}
 }
 
 @media screen and (min-width: 512px) and (max-width: 550px)
@@ -832,6 +832,12 @@ textarea
 	#texteFondBleuPourMobile
 	{
 		padding-top: 100px;
+	}
+
+	#voileBleu
+	{
+		top: 100px;
+		height: 535px;
 	}
 }
 
