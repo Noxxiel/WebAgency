@@ -1,3 +1,4 @@
+/*Police Roboto, regular et gras*/
 @font-face
 {
     font-family: 'Roboto';
@@ -17,6 +18,8 @@ body
 	margin: 0;
 }
 
+/*Navigation (logo + menu)*/
+/*On fixe le "nav", z-index est élevé pour qu'il survole tout le reste*/
 nav
 {
 	position: fixed;
@@ -68,6 +71,7 @@ nav
 	position: relative;
 }
 
+/*Le Slider*/
 #slideshow
 {
 	position: relative;
@@ -192,6 +196,7 @@ li img
 	display: none;
 }
 
+/*Nos services*/
 #services
 {
 	padding-top: 92px;
@@ -200,15 +205,8 @@ li img
 h1
 {
 	text-align: center;
-	clear: both;
 	font-size : 45px;
 	margin: 0;
-}
-
-#projets
-{
-	padding-top: 100px;
-	background-color: #F5F5F5;
 }
 
 hr
@@ -300,9 +298,11 @@ hr
 	top: 14px;
 }
 
-#design
+/*Nos Projets*/
+#projets
 {
-	margin-left: 70px;
+	padding-top: 100px;
+	background-color: #F5F5F5;
 }
 
 #menu2
@@ -529,6 +529,7 @@ sont pas concernés sont transparents..*/
 	opacity: 1;
 }
 
+/*Google Maps + Formulaire*/
 #googleMaps
 {
 	position: relative;
@@ -621,6 +622,7 @@ textarea
 	height: 150px;
 }
 
+/*Pour éviter que le menu dépasse*/
 @media screen and (min-width: 300px) and (max-width: 335px)
 {
 	#menu li
@@ -629,6 +631,7 @@ textarea
 	}
 }
 
+/*On réduit le formulaire*/
 @media screen and (min-width: 300px) and (max-width: 360px)
 {
 	form
@@ -642,6 +645,7 @@ textarea
 	}
 }
 
+/*On réduit le menu de la rubrique "nos projets"*/
 @media screen and (min-width: 300px) and (max-width: 380px)
 {
 	li#bordGauche
@@ -685,6 +689,7 @@ textarea
 	}
 }
 
+/*La taille de l'image du mac s'adapte à la taille du device*/
 @media screen and (min-width: 300px) and (max-width: 510px)
 {
 	#mac
@@ -693,6 +698,7 @@ textarea
 	}
 }
 
+/*Pour que le texte ne se retrouve pas en dessous de l'icône*/
 @media screen and (min-width: 300px) and (max-width: 511px)
 {
 	.icone
@@ -709,6 +715,7 @@ textarea
 	}
 }
 
+/*Gérer le responsive téléphone*/
 @media screen and (min-width: 300px) and (max-width: 680px)
 {
     nav
@@ -810,6 +817,7 @@ textarea
 	}
 }
 
+/*Pour que le texte ne se retrouve pas en dessous de l'icône*/
 @media screen and (min-width: 512px) and (max-width: 550px)
 {
 	.icone
@@ -865,6 +873,7 @@ textarea
 	}
 }
 
+/*Pour que le texte ne se retrouve pas en dessous de l'icône*/
 @media screen and (min-width: 1025px) and (max-width: 1320px)
 {
 	.icone
@@ -878,6 +887,7 @@ textarea
 	}
 }
 
+/*Pour que le texte ne se retrouve pas en dessous de l'icône*/
 @media screen and (min-width: 1321px) and (max-width: 1369px)
 {
 	.icone
