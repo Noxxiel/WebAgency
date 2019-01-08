@@ -52,7 +52,7 @@
                     <p class="blanc">        
                         Vous avez un projet web ? La WebAgency vous aide à le réaliser !
                     </p>
-                    <span class="boutonBleu">Plus d'infos</span>
+                    <button class="boutonBleu">Plus d'infos</button>
                 </div>
             </div>
             <!--Texte du slider pour Mobile et Tablette-->
@@ -73,13 +73,15 @@
             <h2>
                 NOS SERVICES
             </h2>
-            <hr>
-            <span class="cercleBleu"></span>
+            <div class="pointTrait">
+                <hr>
+                <span class="cercleBleuHr"></span>
+            </div>
             <p class="centre">
                 Parce que vous êtes unique, nous nous adaptons à vos besoins et à vos envies. Notre plus grande qualité est l'écoute, et nous nous engageons à vous livrer un site web qui vous ressemble.
             </p>
             <div id="macIconeTexte">
-                <div>
+                <div id="conteneurMac">
                     <img id="mac" src="webagency_images/images/main-feature.png" alt="Illustration">
                 </div>
                 <div id="conteneurIconeTexte">
@@ -87,7 +89,7 @@
                         <li>
                             <div class="icone">
                                 <i class="fas fa-chart-line"></i>
-                                <span class="cercleBleu"></span>
+                                <span class="cercleBleuIcone"></span>
                             </div>
                             <div class="texte">
                                 <h3>
@@ -101,21 +103,21 @@
                         <li>
                             <div class="icone">
                                 <i class="fas fa-cubes"></i>
-                                <span class="cercleBleu"></span>
+                                <span class="cercleBleuIcone"></span>
                             </div>
                             <div class="texte">
                                 <h3>
                                     UI design
                                 </h3>
                                 <p>
-                                    Nous sommes à l'écoute de vos envies et nous nous engageons à vous délivrer une interface utilisateur de qualité.
+                                    Nous nous engageons à vous délivrer une interface utilisateur ergonomique et de qualité.
                                 </p>
                             </div>
                         </li>
                         <li>
                             <div class="icone">
                                 <i class="fas fa-chart-pie"></i>
-                                <span class="cercleBleu"></span>
+                                <span class="cercleBleuIcone"></span>
                             </div>
                             <div class="texte">
                                 <h3>
@@ -139,8 +141,10 @@
                             <h2>
                                 NOS PROJETS
                             </h2>
-                            <hr>
-                            <span class="cercleBleu"></span>
+                            <div class="pointTrait">
+                                <hr>
+                                <span class="cercleBleuHr"></span>
+                            </div>
                             <p class="centre">
                                 Ils nous ont fait confiance et ne l'ont pas regretté !<br>
                                 Voyez par vous-mêmes.
@@ -203,11 +207,11 @@
                     25 rue d'Hauteville 75010 Paris<br> 
                     <span id="pointDessous">Tel :</span> 01 02 03 04 05
                 </p>
-                <input class="champ" type="text" name="name" placeholder="Name" size="35"><br>
-                <input class="champ" type="text" name="email" placeholder="Email" size="35"><br>
-                <input class="champ" type="text" name="subject" placeholder="Subject" size="35"><br>
+                <input class="champ" type="text" name="name" placeholder="Name" required><br>
+                <input class="champ" type="text" name="email" placeholder="Email" required><br>
+                <input class="champ" type="text" name="subject" placeholder="Subject" required><br>
                 <textarea class="champ" placeholder="Message"></textarea>
-                <input class="boutonBleu" type="submit" id="boutonEnvoi" value="Send message">
+                <input class="boutonBleu" type="submit" id="boutonEnvoi" value="Send Message">
             </form>
         </section>
     </body>

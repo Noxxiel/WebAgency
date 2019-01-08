@@ -15,7 +15,8 @@
 body
 {
 	font-family: 'Roboto', Arial;
-	margin: 0;
+	margin: auto;
+	max-width: 2000px;
 }
 
 /*Navigation (logo + menu)*/
@@ -181,14 +182,21 @@ li img
 	margin-bottom: 30px;
 }
 
-.boutonBleu
+#boutonEnvoi, button
 {
-	margin-top: 30px;
-	padding: 10px 20px;
-	border-radius: 3px;
 	background-color: #5CADD3;
-	border-bottom: 3px solid #4494BB;
-	cursor: pointer;
+    border-bottom: solid #4494BB;
+    border-width: 0 0 3px 0;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Roboto';
+}
+
+button
+{
+	padding: 10px 20px;	
+	border-bottom: solid #4494BB;
+	font-size: 1em;
 }
 
 #texteFondBleuPourMobile
@@ -202,9 +210,30 @@ li img
 	padding-top: 92px;
 }
 
+.pointTrait
+{
+	position: relative;
+	margin: auto;
+	height: 35px;
+	width: 150px;
+}
+
+.cercleBleuHr
+{
+	position: absolute;
+	bottom: 19%;
+	left: 41%;
+	background-color: #5CADD3;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	border: 5px solid white;
+}
+
 #services p.centre
 {
 	margin-bottom: 50px;
+	max-width: 625px;
 }
 
 h2
@@ -218,20 +247,7 @@ hr
 {
 	position: relative;
 	top: 15px;
-	width: 150px;
 	opacity: 0.3;
-}
-
-.cercleBleu
-{
-	position: relative;
-	margin: auto;
-	bottom: 7px;
-	background-color: #5CADD3;
-	border-radius: 50%;
-	width: 15px;
-	height: 15px;
-	border: 5px solid white;
 }
 
 .centre
@@ -250,16 +266,22 @@ hr
 	margin: auto;
 }
 
+#conteneurMac
+{
+	min-width: 510px;
+}
+
 #mac
 {
-	margin: 0 100px;
+	max-width: 510px;
+	width: 100%;
 }
 
 #iconeTexte
 {
 	margin-top: 70px;
 	list-style-type: none;
-	width: 72%;
+	width: 100%;
 	padding-left: 0;
 }
 
@@ -297,16 +319,22 @@ hr
 	border-radius: 50%;
 }
 
-.icone .cercleBleu
+.cercleBleuIcone
 {
 	position: absolute;
 	left: 59px;
-	top: 8px;
+	top: 22px;
+	background-color: #5CADD3;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	border: 5px solid white;
 }
 
 .texte
 {
 	width: 100%;
+	max-width: 410px;
 }
 
 /*Nos Projets*/
@@ -450,7 +478,8 @@ figure:hover figcaption
 
 /*Quand je clique sur un bouton, il est enclenché (sauf All Works)*/
 
-#creative:target #bouton2, #corporate:target #bouton3, 
+#creative:target #bouton2, 
+#corporate:target #bouton3, 
 #portfolio:target #bordDroit
 {
 	background-color: #5CADD3;
@@ -489,7 +518,8 @@ figure:hover figcaption
 	display: block;
 }
 
-#creative:target #bordGauche, #corporate:target #bordGauche, 
+#creative:target #bordGauche, 
+#corporate:target #bordGauche, 
 #portfolio:target #bordGauche
 {
 	background-color: #E5E5E5;
@@ -622,8 +652,7 @@ input.champ
 	margin-top: 5px;
 	height: 34px;
 	width: 113px;
-	padding: 0;
-	border-radius: 5px;
+	font-weight: bold;
 }
 
 textarea
@@ -633,32 +662,9 @@ textarea
 	height: 150px;
 }
 
-/*Pour éviter que le menu dépasse*/
-@media screen and (min-width: 300px) and (max-width: 335px)
+@media screen and (min-width: 300px) and (max-width: 1024px)
 {
-	#menu li
-	{ 
-		margin-right: 3px;
-	}
-}
-
-/*On réduit le formulaire*/
-@media screen and (min-width: 300px) and (max-width: 360px)
-{
-	form
-	{
-		width: 260px;
-	}
-
-	.champ
-	{
-		width: 240px;
-	}
-}
-
-/*On réduit le menu de la rubrique "nos projets"*/
-@media screen and (min-width: 300px) and (max-width: 380px)
-{
+	/*On réduit le menu de la rubrique "nos projets"*/
 	li#bordGauche
 	{
 		padding: 5px 0 1px 0;
@@ -686,7 +692,8 @@ textarea
 		padding-bottom: 5px;
 	}
 
-	#creative:target #bouton2, #corporate:target #bouton3, 
+	#creative:target #bouton2, 
+	#corporate:target #bouton3, 
 	#portfolio:target #bordDroit
 	{
 		padding-bottom: 5px;
@@ -698,29 +705,31 @@ textarea
 	{
 		padding-bottom: 5px;
 	}
-}
 
-/*La taille de l'image du mac s'adapte à la taille du device*/
-@media screen and (min-width: 300px) and (max-width: 510px)
-{
-	#mac
-	{
-		width: 100%;
-	}
-}
-
-@media screen and (min-width: 300px) and (max-width: 639px)
-{
 	#conteneurImagesProjets
 	{
 		justify-content: center;
 	}
-}
 
-/*Gérer le responsive téléphone*/
-@media screen and (min-width: 300px) and (max-width: 680px)
-{
-    nav
+	/*Pour éviter que le menu du haut dépasse*/
+	#menu li
+	{ 
+		margin-right: 3px;
+	}
+
+	/*On réduit le formulaire*/
+	form
+	{
+		width: 260px;
+	}
+
+	.champ
+	{
+		width: 240px;
+	}
+
+	/*Le menu se trouve sous le logo*/
+	nav
     {
         flex-direction: column;
     }
@@ -735,6 +744,7 @@ textarea
     	padding-top: 20px;
     }
 
+    /*Ajustement du padding et des positions nécessaire*/
     #sContent
     {
     	padding-top: 140px;
@@ -745,15 +755,6 @@ textarea
     	padding-top: 135px;
     }
 
-    #voileBleu
-	{
-		top: 135px;
-		height: 535px;
-	}
-}
-
-@media screen and (min-width: 300px) and (max-width: 1024px)
-{
 	#slideshow
 	{
 		height: 340px;
@@ -807,6 +808,11 @@ textarea
 		display: initial;
 	}
 
+	#conteneurMac
+	{
+		min-width: 0;
+	}
+
 	#mac
 	{
 		display: block;
@@ -817,36 +823,33 @@ textarea
 	{
 		width: 100%;
 	}
-}
 
-@media screen and (min-width: 640px) and (max-width: 1023px)
-{
-	#conteneurImagesProjets
+	#iconeTexte li
 	{
 		justify-content: center;
 	}
 
+	#texteFondBleuPourMobile
+	{
+		padding-top: 150px;
+	}
+
+	#voileBleu
+	{
+		top: 135px;
+		height: 535px;
+	}
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px)
+{
 	figure
 	{
 		margin: 25px;
 	}
 }
 
-@media screen and (min-width: 681px) and (max-width: 1024px)
-{
-	#texteFondBleuPourMobile
-	{
-		padding-top: 100px;
-	}
-
-	#voileBleu
-	{
-		top: 100px;
-		height: 535px;
-	}
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1279px)
+@media screen and (min-width: 1024px) and (max-width: 1320px)
 {
 	#conteneurImagesProjets
 	{
@@ -864,10 +867,7 @@ textarea
 		font-size: 0.85em;
 		line-height: 20px;
 	}
-}
 
-@media screen and (min-width: 1025px) and (max-width: 1320px)
-{
 	#slideshow
 	{
 		height: 560px;
@@ -900,15 +900,6 @@ textarea
 
 @media screen and (min-width: 2000px)
 {
-	#slideshow
-	{
-		width: 2000px;
-		margin: auto;
-	}
-
-	/*Méthode pour centrer "nav" sans margin auto, incompatible avec 
-	position: fixed*/
-
 	nav
 	{
 		right: 50%;
