@@ -647,6 +647,11 @@ input.champ
 	margin-bottom: 10px;
 }
 
+input.boutonBleu
+{
+	font-weight: bold;
+}
+
 #boutonEnvoi
 {
 	margin-top: 5px;
