@@ -133,22 +133,22 @@ li img
 	border-radius: 70px 0 0 70px;
 }
 
-.fa-chevron-left
+.fa-chevron-left, .fa-chevron-right
 {
 	position: relative;
-	left: 5px;
 	top: 25px;
 	color: white;
 	font-size: 21px;
 }
 
+.fa-chevron-left
+{
+	left: 5px;
+}
+
 .fa-chevron-right
 {
-	position: relative;
 	left: 15px;
-	top: 25px;
-	color: white;
-	font-size: 21px;
 }
 
 #texteSurImage
@@ -202,7 +202,12 @@ li img
 	padding-top: 92px;
 }
 
-h1
+#services p.centre
+{
+	margin-bottom: 50px;
+}
+
+h2
 {
 	text-align: center;
 	font-size : 45px;
@@ -247,7 +252,7 @@ hr
 
 #mac
 {
-	margin-left: 100px; 
+	margin: 0 100px;
 }
 
 #iconeTexte
@@ -260,7 +265,7 @@ hr
 
 #iconeTexte h3
 {
-	margin-bottom: 0;
+	margin: 0;
 }
 
 #iconeTexte p
@@ -272,16 +277,17 @@ hr
 #iconeTexte li
 {
 	margin-bottom: 30px;
+	display: flex;
 }
 
 .icone
 {
 	position: relative;
-	float: left;
 	padding: 20px;
 	border-radius: 50%;
 	border: 1px solid #d3d3d3;
 	margin-right: 40px;
+	height: 30px;
 }
 
 .fa-chart-line, .fa-cubes, .fa-chart-pie
@@ -295,7 +301,12 @@ hr
 {
 	position: absolute;
 	left: 59px;
-	top: 14px;
+	top: 8px;
+}
+
+.texte
+{
+	width: 100%;
 }
 
 /*Nos Projets*/
@@ -582,7 +593,7 @@ form p
 	border-width: 1px;
 }
 
-#googleMaps h2
+form h3
 {
 	font-size: x-large;
 	margin: 20px 0 15px 0;
@@ -698,15 +709,6 @@ textarea
 	}
 }
 
-/*Pour que le texte ne se retrouve pas en dessous de l'icône*/
-@media screen and (min-width: 300px) and (max-width: 511px)
-{
-	.icone
-	{
-		margin-bottom: 60px;
-	}
-}
-
 @media screen and (min-width: 300px) and (max-width: 639px)
 {
 	#conteneurImagesProjets
@@ -795,7 +797,7 @@ textarea
 		margin: auto;
 	}
 
-	form h2
+	form h3
 	{
 		padding-top: 20px;
 	}
@@ -814,15 +816,6 @@ textarea
 	#iconeTexte
 	{
 		width: 100%;
-	}
-}
-
-/*Pour que le texte ne se retrouve pas en dessous de l'icône*/
-@media screen and (min-width: 512px) and (max-width: 550px)
-{
-	.icone
-	{
-		margin-bottom: 10px;
 	}
 }
 
@@ -873,26 +866,11 @@ textarea
 	}
 }
 
-/*Pour que le texte ne se retrouve pas en dessous de l'icône*/
 @media screen and (min-width: 1025px) and (max-width: 1320px)
 {
-	.icone
-	{
-		margin-bottom: 60px;
-	}
-
 	#slideshow
 	{
 		height: 560px;
-	}
-}
-
-/*Pour que le texte ne se retrouve pas en dessous de l'icône*/
-@media screen and (min-width: 1321px) and (max-width: 1369px)
-{
-	.icone
-	{
-		margin-bottom: 10px;
 	}
 }
 
